@@ -11,9 +11,9 @@ sed -i "s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJ
 
 # 设置 nginx 伪装站
 rm -rf /usr/share/nginx/*
-wget https://github.com/yonggekkk/doprax-xray/raw/main/3w/html8.zip -O /usr/share/nginx/html8.zip
-unzip -o "/usr/share/nginx/html8.zip" -d /usr/share/nginx/html
-rm -f /usr/share/nginx/html8.zip
+wget https://github.com/bsefwe/back4app/raw/main/3w/html7.zip -O /usr/share/nginx/html7.zip
+unzip -o "/usr/share/nginx/html7.zip" -d /usr/share/nginx/html
+rm -f /usr/share/nginx/html7.zip
 
 # 伪装 xray 执行文件
 RELEASE_RANDOMNESS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 6)
